@@ -1,10 +1,6 @@
-version: "3.8"
-
 services:
   strapi-webhook-proxy:
-    build:
-      context: .
-      dockerfile: Dockerfile
+    build: .
     container_name: strapi-webhook-actions-proxy
     restart: unless-stopped
     expose:
